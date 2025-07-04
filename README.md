@@ -1,3 +1,2 @@
-# This is the Website for Wired Workshop
-
-https://wireds2024.github.io/
+# This is the Website for BRIDGES-PNG
+https://bridges-png.github.io/
