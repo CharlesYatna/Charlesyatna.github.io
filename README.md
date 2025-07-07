@@ -1,3 +1,4 @@
-# This is the Website for Wired Workshop
+# This is the Website for BRIDGES-PNG Summer School 2025
 
-https://wireds2024.github.io/
+https://bridges-png.github.io/
+
