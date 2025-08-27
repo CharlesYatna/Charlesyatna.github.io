@@ -1,5 +1,5 @@
-theme: jekyll-theme-cayman
-title: Gaikovina Amini
-description: "This is my personal website"
-background: ""
-repository: charlesgaikovina/charlesgaikovina.github.io
+title: Modernist theme
+description: Modernist is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-modernist
