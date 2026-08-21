@@ -4,3 +4,16 @@ _site
 .jekyll-metadata
 vendor
 Gemfile.lock
+
+# Hugo files/build output (this site is built with Jekyll)
+.hugo_build.lock
+hugo.toml
+public/
+resources/
+archetypes/
+content/
+data/
+i18n/
+layouts/
+static/
+themes/

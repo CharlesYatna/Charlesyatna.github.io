@@ -1,3 +1,9 @@
+---
+layout: default
+title: Members
+permalink: /members/
+---
+
 ### Wakate Team
 
 - **Shiyu Yang**<br>Osaka University, Japan

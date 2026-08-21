@@ -1,3 +1,9 @@
+---
+layout: default
+title: Travel
+permalink: /travel/
+---
+
 ## Accommodation
 We have listed three hotels near the venue here, but you are welcome to stay at any of the other hotels. Please kindly book your own accommodations, as the workshop does not cover accommodation.
 - [Rihga Royal Hotel](https://www.rihga.com/osaka)
