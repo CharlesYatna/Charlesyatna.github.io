@@ -486,15 +486,7 @@ permalink: /
       </div>
     </section>
 
-    <section id="team" class="culture-section">
-      <div class="container">
-        <h2 class="section-title">Team Member</h2>
-        <div class="about-box">
-          <h3>Charles Yatna</h3>
-          <p>Collaborator involved in organizing tasks, coordinating group activities, and supporting project planning. Works closely with Gaikovina on student projects, budgeting tasks, and leadership roles.</p>
-        </div>
-      </div>
-    </section>
+    
 
     <section id="contact">
       <div class="container">
