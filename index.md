@@ -323,6 +323,7 @@ permalink: /
 </head>
 <body>
   <div class="sticker-layer" aria-hidden="true">
+    <img class="sticker profile-sticker" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Amini" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-7deg); z-index: 2; width: clamp(160px, 18vw, 220px); opacity: 1;">
     <img class="sticker one" src="/assets/images/culture-detail-1.jpg" alt="">
     <img class="sticker two" src="/assets/images/culture-detail-2.jpg" alt="">
     <img class="sticker three" src="/assets/images/culture-detail-3.jpg" alt="">
@@ -362,7 +363,7 @@ permalink: /
         </div>
 
         <aside class="profile-card" aria-label="Profile summary">
-          <img class="profile-photo" src="/assets/images/gaikovina-profile.jpg" alt="Gaikovina Amini">
+          
           <ul class="quick-list">
             <li><strong>Name:</strong> Gaikovina Amini</li>
             <li><strong>University:</strong> Ritsumeikan Asia Pacific University</li>
