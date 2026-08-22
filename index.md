@@ -366,9 +366,9 @@ permalink: /
       <div class="container hero-inner">
         <div>
           <span class="eyebrow">Accounting & Finance Student</span>
-          <h1>Professional Profile — Gaikovina Amini</h1>
+          <h1>Gaikovina Amini</h1>
           <p class="lead">
-            I am an aspiring accounting and finance professional with a strong interest in auditing, bookkeeping, and corporate financial management. Originally from Papua New Guinea and currently studying in Japan, I am building a strong foundation in academic knowledge and practical financial skills.
+            I’m a proud Papua New Guinean who loves numbers, problem‑solving, and working with people from all kinds of cultures. Studying accounting and finance in Japan has helped me build strong practical skills while meeting amazing people from around the world. I enjoy turning financial information into something clear and useful, and I’m excited to keep growing in the accounting field.
           </p>
           <div class="actions">
             <a class="button primary" href="mailto:aminigaikovin7@gmail.com">Contact Me</a>
@@ -377,7 +377,7 @@ permalink: /
         </div>
 
         <aside class="profile-card" aria-label="Profile summary">
-          <img class="profile-photo" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Amini" style="max-width:220px;width:90vw;aspect-ratio:1/1;object-fit:cover;margin-bottom:16px;box-shadow:0 4px 36px rgba(40,40,45,0.13), 0 1px 8px rgba(0,0,0,0.07);border-radius:22px;">
+          <img class="profile-photo" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Amini" style="width:100%;max-width:320px;aspect-ratio:1/1;object-fit:cover;object-position:center; margin-bottom:20px;box-shadow:0 4px 36px rgba(40,40,45,0.13), 0 1px 8px rgba(0,0,0,0.07);border-radius:18px;display:block;">
           <ul class="quick-list">
             <li><strong>Name:</strong> Gaikovina Amini</li>
             <li><strong>University:</strong> Ritsumeikan Asia Pacific University</li>
