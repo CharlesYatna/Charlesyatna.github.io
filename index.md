@@ -78,6 +78,20 @@ permalink: /
       filter: saturate(1.08) contrast(0.98);
     }
 
+    .profile-sticker {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-3deg);
+      width: clamp(180px, 22vw, 260px);
+      border-radius: 50%;
+      box-shadow: 0 12px 36px rgba(60, 32, 12, 0.24), 0 2px 8px rgba(0,0,0,0.1);
+      border: 6px solid #fff;
+      opacity: 1;
+      filter: none;
+      background: #fff;
+      z-index: 2;
+    }
+
     .sticker.one { top: 110px; left: 22px; transform: rotate(-10deg); }
     .sticker.two { top: 230px; right: 30px; transform: rotate(9deg); }
     .sticker.three { top: 760px; left: 5%; transform: rotate(8deg); }
@@ -323,7 +337,7 @@ permalink: /
 </head>
 <body>
   <div class="sticker-layer" aria-hidden="true">
-    <img class="sticker profile-sticker" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Amini" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-7deg); z-index: 2; width: clamp(160px, 18vw, 220px); opacity: 1;">
+    <img class="sticker profile-sticker" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Amini">
     <img class="sticker one" src="/assets/images/culture-detail-1.jpg" alt="">
     <img class="sticker two" src="/assets/images/culture-detail-2.jpg" alt="">
     <img class="sticker three" src="/assets/images/culture-detail-3.jpg" alt="">
