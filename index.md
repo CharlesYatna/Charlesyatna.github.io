@@ -400,7 +400,11 @@ permalink: /
         <div class="grid-2">
           <div class="about-box">
             <h3>Education</h3>
-            <p><strong>Ritsumeikan Asia Pacific University (APU)</strong><br>Bachelor’s Degree — Accounting / Finance Major<br>Expected Graduation: 2027</p>
+            <ul class="list">
+              <li><strong>Ritsumeikan Asia Pacific University (APU), Japan</strong><br>Bachelor’s Degree — Accounting / Finance Major<br>Expected Graduation: 2027</li>
+              <li><strong>Port Moresby International School (POMIS), Papua New Guinea</strong><br>Grade 9 to Grade 12<br>Completed upper‑secondary education with involvement in cultural leadership and school events.</li>
+              <li><strong>Gordons International School, Papua New Guinea</strong><br>Prep to Grade 8<br>Completed primary and lower‑secondary education, building early academic foundations.</li>
+            </ul>
           </div>
           <div class="about-box">
             <h3>Career Goals</h3>
