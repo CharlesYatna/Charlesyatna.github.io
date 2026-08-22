@@ -79,48 +79,18 @@ permalink: /
     }
 
     .profile-sticker {
-      position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) rotate(-1.5deg);
-      width: clamp(180px, 22vw, 240px);
-      height: clamp(180px, 22vw, 240px);
+      transform: translate(-50%, -50%) rotate(-3deg);
+      width: clamp(180px, 22vw, 260px);
       border-radius: 50%;
-      background: #fff;
-      box-shadow: 0 8px 32px rgba(21,21,24,0.14), 0 2px 8px rgba(0,0,0,0.075);
-      border: 5px solid #fff;
+      box-shadow: 0 12px 36px rgba(60, 32, 12, 0.24), 0 2px 8px rgba(0,0,0,0.1);
+      border: 6px solid #fff;
       opacity: 1;
       filter: none;
-      object-fit: cover;
-      object-position: center;
-      z-index: 3;
+      background: #fff;
+      z-index: 2;
     }
-    .talk-btn {
-      margin-left: 22px;
-      padding: 10px 22px;
-      border-radius: 22px;
-      background: #181818;
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.01rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      border: none;
-      text-decoration: none;
-      transition: background .2s, transform .18s;
-      display: flex; align-items: center;
-      gap: 8px;
-    }
-    .talk-btn:hover {
-      background: #333;
-      transform: translateY(-2px) scale(1.033);
-      text-decoration: none;
-    }
-    .social-link:hover {
-      background: #eee;
-      color: #000;
-      border: 1.5px solid #333;
-    }
-
 
     .sticker.one { top: 110px; left: 22px; transform: rotate(-10deg); }
     .sticker.two { top: 230px; right: 30px; transform: rotate(9deg); }
@@ -366,18 +336,26 @@ permalink: /
   </style>
 </head>
 <body>
-  <!-- Stickers hidden for modern style -->
   <div class="sticker-layer" aria-hidden="true">
-    <img class="profile-sticker" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Charles Yatna AMINI">
+    <img class="sticker profile-sticker" src="/assets/images/gaikovina-profile.png" alt="Gaikovina Amini">
+    <img class="sticker one" src="/assets/images/culture-detail-1.jpg" alt="">
+    <img class="sticker two" src="/assets/images/culture-detail-2.jpg" alt="">
+    <img class="sticker three" src="/assets/images/culture-detail-3.jpg" alt="">
+    <img class="sticker four" src="/assets/images/culture-bg-1.jpg" alt="">
+    <img class="sticker five" src="/assets/images/culture-bg-2.jpg" alt="">
+    <img class="sticker six" src="/assets/images/culture-detail-2.jpg" alt="">
+    <img class="sticker seven" src="/assets/images/sticker-img-5714.jpg" alt="">
+    <img class="sticker eight" src="/assets/images/sticker-img-5713.jpg" alt="">
   </div>
 
   <header>
     <div class="container nav">
-      <div class="brand">Available for New Project</div>
+      <div class="brand">GAIKOVINA AMINI</div>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#service">Service</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -385,25 +363,32 @@ permalink: /
 
   <main>
     <section class="hero">
-      <div class="container" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:68vh;">
-        <div class="hero-title-group">
-          <h1 style="font-size:clamp(2.7rem,7vw,6.6rem);font-weight:900;letter-spacing:-.01em;margin-bottom:8px;line-height:1.1;">
-            <span style="color:#222;-webkit-text-stroke:1.5px #000;text-stroke:1.5px #000;font-weight:600;background:none;">GAIKOVINA CHARLES YATNA</span> <span style="color:#181818;font-weight:900;">AMINI</span>
-          </h1>
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow">Accounting & Finance Student</span>
+          <h1>Professional Profile — Gaikovina Amini</h1>
+          <p class="lead">
+            I am an aspiring accounting and finance professional with a strong interest in auditing, bookkeeping, and corporate financial management. Originally from Papua New Guinea and currently studying in Japan, I am building a strong foundation in academic knowledge and practical financial skills.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="mailto:aminigaikovin7@gmail.com">Contact Me</a>
+            <a class="button secondary" href="#experience">View Experience</a>
+          </div>
         </div>
-        <div style="font-size:1.5rem;font-weight:700;color:#353638;margin-bottom:14px;">Accounting and Finance Student</div>
-        <!-- Centered profile sticker is handled by .sticker-layer visually -->
-        <div class="hero-role-desc" style="font-size:1.05rem;color:#666d6f;max-width:520px;margin:16px auto 18px auto;">
-          Aspiring professional with interest in auditing, bookkeeping, and corporate finance.<br>
-          Based in Japan, originally from Papua New Guinea.
-        </div>
-        <a class="button primary" href="mailto:aminigaikovin7@gmail.com" style="margin-bottom:28px;margin-top:2px;">Let's collaborate <span aria-hidden="true">↗</span></a>
-        <div style="margin-top:10px;display:flex;gap:16px;justify-content:center;">
-          <a class="social-link" style="border:1.5px solid #ddd;padding:7px 16px;border-radius:18px;background:#fafbfb;color:#141414;font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px;text-decoration:none;transition:.2s;" href="https://instagram.com/charlesyatna" target="_blank" rel="noopener">Instagram</a>
-          <a class="social-link" style="border:1.5px solid #ddd;padding:7px 16px;border-radius:18px;background:#fafbfb;color:#141414;font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px;text-decoration:none;transition:.2s;" href="https://tiktok.com/@charlesyatna" target="_blank" rel="noopener">TikTok</a>
-        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          
+          <ul class="quick-list">
+            <li><strong>Name:</strong> Gaikovina Amini</li>
+            <li><strong>University:</strong> Ritsumeikan Asia Pacific University</li>
+            <li><strong>Major:</strong> Accounting / Finance</li>
+            <li><strong>Expected Graduation:</strong> 2027</li>
+            <li><strong>Nationality:</strong> Papua New Guinean</li>
+            <li><strong>Location:</strong> Japan</li>
+          </ul>
+        </aside>
       </div>
-    </section> 
+    </section>
 
 
     <section id="about" class="culture-section">
