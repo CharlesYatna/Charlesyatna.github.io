@@ -499,10 +499,10 @@ permalink: /
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <p class="section-copy">Available for accounting, finance, leadership, student project, and professional networking opportunities.</p>
+        <p class="section-copy">You can contact me through the details below.</p>
         <div class="actions">
           <a class="button primary" href="mailto:gaikovina7@gmail.com">gaikovina7@gmail.com</a>
-          <a class="button secondary" href="#">Instagram: Charles yatna</a>
+          <a class="button secondary" href="#">Instagram: Charles_yatna_</a>
         </div>
       </div>
     </section>
