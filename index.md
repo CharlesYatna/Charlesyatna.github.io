@@ -27,13 +27,27 @@ permalink: /
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      position: relative;
       background:
         radial-gradient(circle at 10% 10%, rgba(159, 79, 40, 0.12), transparent 26%),
         radial-gradient(circle at 90% 20%, rgba(86, 51, 31, 0.10), transparent 24%),
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.55), transparent 28%),
         linear-gradient(135deg, #f8f0e3 0%, #f3e1cd 48%, #f9f4eb 100%);
       color: var(--ink);
       line-height: 1.6;
       overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(60, 32, 12, 0.07) 1px, transparent 1.5px);
+      background-size: 22px 22px;
+      opacity: 0.16;
+      mix-blend-mode: multiply;
     }
 
     a { color: var(--accent); text-decoration: none; }
@@ -58,7 +72,7 @@ permalink: /
       z-index: 1;
     }
 
-    .sticker-layer {
+    .ink-layer {
       position: fixed;
       inset: 0;
       pointer-events: none;
@@ -66,40 +80,73 @@ permalink: /
       overflow: hidden;
     }
 
-    .sticker {
+    .ink-mark {
       position: absolute;
-      width: clamp(86px, 12vw, 170px);
+      width: clamp(96px, 12vw, 180px);
       aspect-ratio: 1;
-      object-fit: cover;
-      border-radius: 22px;
-      border: 6px solid rgba(255, 255, 255, 0.74);
-      box-shadow: 0 18px 36px rgba(86, 51, 31, 0.16);
+      border-radius: 38% 62% 58% 42% / 45% 44% 56% 55%;
+      border: 2px solid rgba(60, 32, 12, 0.34);
+      box-shadow: inset 0 0 0 1px rgba(60, 32, 12, 0.08), 0 12px 22px rgba(60, 32, 12, 0.06);
       opacity: 0.18;
-      filter: saturate(1.08) contrast(0.98);
+      transform-origin: center;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(60, 32, 12, 0.04) 0 30%, transparent 31%),
+        radial-gradient(circle at 50% 50%, transparent 52%, rgba(60, 32, 12, 0.12) 53% 55%, transparent 56%);
     }
 
-    .profile-sticker {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-3deg);
-      width: clamp(180px, 22vw, 260px);
+    .ink-mark::before,
+    .ink-mark::after {
+      content: "";
+      position: absolute;
+      inset: 18%;
+      border: 1px solid rgba(60, 32, 12, 0.22);
+      border-radius: inherit;
+    }
+
+    .ink-mark::after {
+      inset: 41%;
       border-radius: 50%;
-      box-shadow: 0 12px 36px rgba(60, 32, 12, 0.24), 0 2px 8px rgba(0,0,0,0.1);
-      border: 6px solid #fff;
-      opacity: 1;
-      filter: none;
-      background: #fff;
-      z-index: 2;
+      border: none;
+      background: rgba(60, 32, 12, 0.24);
     }
 
-    .sticker.one { top: 110px; left: 22px; transform: rotate(-10deg); }
-    .sticker.two { top: 230px; right: 30px; transform: rotate(9deg); }
-    .sticker.three { top: 760px; left: 5%; transform: rotate(8deg); }
-    .sticker.four { top: 1180px; right: 6%; transform: rotate(-8deg); }
-    .sticker.five { bottom: 130px; left: 26px; transform: rotate(12deg); }
-    .sticker.six { bottom: 260px; right: 38px; transform: rotate(-12deg); }
-    .sticker.seven { top: 430px; left: 34px; transform: rotate(7deg); }
-    .sticker.eight { top: 560px; right: 44px; transform: rotate(-7deg); }
+    .ink-mark.line {
+      width: clamp(120px, 18vw, 260px);
+      height: 3px;
+      aspect-ratio: auto;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent, rgba(60, 32, 12, 0.42), transparent);
+      opacity: 0.24;
+      box-shadow: none;
+    }
+
+    .ink-mark.line::before,
+    .ink-mark.line::after {
+      inset: auto;
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 26px;
+      height: 1px;
+      background: rgba(60, 32, 12, 0.36);
+      transform: translateY(-50%);
+    }
+
+    .ink-mark.line::before { left: 14px; }
+    .ink-mark.line::after { right: 14px; }
+
+    .ink-mark.one { top: 86px; left: 10px; transform: rotate(-14deg); }
+    .ink-mark.two { top: 165px; right: 22px; transform: rotate(13deg); }
+    .ink-mark.three { top: 420px; left: -16px; transform: rotate(8deg) scale(0.86); }
+    .ink-mark.four { top: 760px; right: -8px; transform: rotate(-11deg) scale(0.92); }
+    .ink-mark.five { bottom: 118px; left: 20px; transform: rotate(11deg); }
+    .ink-mark.six { bottom: 280px; right: 24px; transform: rotate(-9deg); }
+    .ink-mark.seven { top: 310px; left: 42px; transform: rotate(7deg) scale(0.72); }
+    .ink-mark.eight { top: 560px; right: 56px; transform: rotate(-7deg) scale(0.74); }
+
+    .ink-mark.nine { top: 26px; left: 50%; transform: translateX(-50%) rotate(0deg); }
+    .ink-mark.ten { bottom: 28px; left: 50%; transform: translateX(-50%) rotate(0deg); }
 
     .nav {
       display: flex;
@@ -330,22 +377,24 @@ permalink: /
       .nav { flex-direction: column; justify-content: center; padding: 18px 0; }
       .hero { padding-top: 52px; }
       .mosaic-card:nth-child(2) { transform: none; }
-      .sticker { width: 82px; opacity: 0.11; }
-      .sticker.three, .sticker.four, .sticker.five, .sticker.six, .sticker.seven, .sticker.eight { display: none; }
+      .ink-mark { width: 76px; opacity: 0.09; }
+      .ink-mark.three, .ink-mark.four, .ink-mark.five, .ink-mark.six, .ink-mark.seven, .ink-mark.eight { display: none; }
+      .ink-mark.line { width: 120px; }
     }
   </style>
 </head>
 <body>
-  <div class="sticker-layer" aria-hidden="true">
-
-    <img class="sticker one" src="/assets/images/culture-detail-1.jpg" alt="">
-    <img class="sticker two" src="/assets/images/culture-detail-2.jpg" alt="">
-    <img class="sticker three" src="/assets/images/culture-detail-3.jpg" alt="">
-    <img class="sticker four" src="/assets/images/culture-bg-1.jpg" alt="">
-    <img class="sticker five" src="/assets/images/culture-bg-2.jpg" alt="">
-    <img class="sticker six" src="/assets/images/culture-detail-2.jpg" alt="">
-    <img class="sticker seven" src="/assets/images/sticker-img-5714.jpg" alt="">
-    <img class="sticker eight" src="/assets/images/sticker-img-5713.jpg" alt="">
+  <div class="ink-layer" aria-hidden="true">
+    <span class="ink-mark one"></span>
+    <span class="ink-mark two"></span>
+    <span class="ink-mark three"></span>
+    <span class="ink-mark four"></span>
+    <span class="ink-mark five"></span>
+    <span class="ink-mark six"></span>
+    <span class="ink-mark seven"></span>
+    <span class="ink-mark eight"></span>
+    <span class="ink-mark line nine"></span>
+    <span class="ink-mark line ten"></span>
   </div>
 
   <header>
