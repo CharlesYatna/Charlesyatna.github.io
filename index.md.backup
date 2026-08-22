@@ -406,14 +406,7 @@ permalink: /
               <li><strong>Gordons International School, Papua New Guinea</strong><br>Prep to Grade 8<br>Completed primary and lower‑secondary education, building early academic foundations.</li>
             </ul>
           </div>
-          <div class="about-box">
-            <h3>Career Goals</h3>
-            <div class="tag-list">
-              <span class="tag">Audit</span><span class="tag">Tax</span><span class="tag">Bookkeeping</span><span class="tag">Corporate Accounting</span><span class="tag">Financial Analysis</span><span class="tag">Budgeting</span><span class="tag">Finance</span>
-            </div>
-          </div>
-        </div>
-      </div>
+          
     </section>
 
     <section id="skills">
@@ -486,15 +479,7 @@ permalink: /
       </div>
     </section>
 
-    <section id="team" class="culture-section">
-      <div class="container">
-        <h2 class="section-title">Team Member</h2>
-        <div class="about-box">
-          <h3>Charles Yatna</h3>
-          <p>Collaborator involved in organizing tasks, coordinating group activities, and supporting project planning. Works closely with Gaikovina on student projects, budgeting tasks, and leadership roles.</p>
-        </div>
-      </div>
-    </section>
+  
 
     <section id="contact">
       <div class="container">
